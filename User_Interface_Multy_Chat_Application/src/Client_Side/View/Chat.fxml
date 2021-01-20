@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="550.0" prefWidth="325.0" style="-fx-background-color: #CF66F9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client_Side.Controller.ChatController">
+   <children>
+      <JFXTextArea fx:id="txtmessage" editable="false" layoutX="25.0" layoutY="64.0" prefHeight="393.0" prefWidth="282.0" />
+      <AnchorPane layoutX="-2.0" opacity="0.38" prefHeight="49.0" prefWidth="332.0" style="-fx-background-color: black;">
+         <children>
+            <Label fx:id="txtprofile" layoutX="104.0" layoutY="14.0" prefHeight="24.0" prefWidth="101.0" styleClass="txtTypeColor" stylesheets="@../../CSS/css.css" text="PROFILE">
+               <font>
+                  <Font name="Serif Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="24.0" fitWidth="29.0" layoutX="308.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/menu_vertical_50px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="29.0" layoutX="275.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/call_50px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="29.0" layoutX="235.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/video_call_50px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="29.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/back_to_48px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="txtmsg" layoutX="16.0" layoutY="486.0" onAction="#msgOnAction" prefHeight="33.0" prefWidth="271.0" style="-fx-background-radius: 20;" />
+      <ImageView fitHeight="24.0" fitWidth="29.0" layoutX="295.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/paper_plane_50px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="17.0" layoutX="258.0" layoutY="493.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/camera_26px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="17.0" layoutX="235.0" layoutY="493.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/attach_24px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
