@@ -22,25 +22,25 @@ public class LogingController {
 
     public void LogingOnAction(ActionEvent actionEvent) throws IOException {
         userName = txtusername.getText().trim();
-        pw=txtpw.getText().trim();
+        pw = txtpw.getText().trim();
         boolean flag = false;
-        if(users.isEmpty()){
+        if (users.isEmpty()) {
             users.add(userName);
             flag = true;
         }
 
-        for(String s : users) {
+        for (String s : users) {
             if (!s.equalsIgnoreCase(userName)) {
                 flag = true;
                 System.out.println(userName);
                 break;
             }
         }
-            if(flag){
-                this.root.getChildren().clear();
-                this.root.getChildren().add(FXMLLoader.load(this.getClass().
-                        getResource("../View/Chat.fxml")));
-            }
+        if (flag) {
+            this.root.getChildren().clear();
+            this.root.getChildren().add(FXMLLoader.load(this.getClass().
+                    getResource("../View/Chat.fxml")));
+        }
 
     }
 }
